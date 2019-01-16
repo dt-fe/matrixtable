@@ -1,0 +1,26 @@
+{
+  "name": "react-supertable",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "pri dev",
+    "docs": "pri docs",
+    "build": "pri build",
+    "bundle": "pri bundle",
+    "preview": "pri preview",
+    "analyse": "pri analyse",
+    "test": "pri test",
+    "format": "tslint --fix './src/**/*.?(ts|tsx)' && prettier --write './src/**/*.?(ts|tsx)'",
+    "prepublishOnly": "npm run build"
+  },
+  "pri": {
+    "type": "component"
+  },
+  "devDependencies": {
+    "pri": "1.0.16"
+  },
+  "main": "dist/index.js",
+  "types": "src/index.tsx",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  }
+}
